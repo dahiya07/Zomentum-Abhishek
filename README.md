@@ -11,7 +11,7 @@
 
 ## Langauges and Tools Used
 ### **HTML**
-!(screenshot(97).png)
+<img src="Screenshot (97).png">
 ### **SASS**
 ###### It is a preprocessor scripting language that is interpreted or compiled into CSS. Css codes in this project are build from scratch .NO external Framework Used.
 ### **JavaScript**
