@@ -1,0 +1,98 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Chat-Application</title>
+</head>
+<body>
+    <div class="chat">
+        <div class="header">
+            <div class="title">
+                <h1>ChatZen (•.•)</h1>
+            </div>
+            <div class="about">
+                <p>Click on Contact to Start a Conversation </p>
+            </div>   
+        </div>
+        <div class="container" id='box'>
+            <div class="user-box" id="user-box">
+                <div class="upper" id="search">
+                    <div class="search">
+                        <input type="text" placeholder="Search" id="mySearch" >
+                        <i class="fa fa-search"></i>
+                    </div>
+                    <div class="icons">
+                        <i class="fa fa-phone"></i>
+                        <i class="fa fa-envelope"></i>
+                        <i class="fa fa-spinner"></i>
+                    </div>
+                </div>
+                <div class="user 1 us1" id='1'>
+                    <img src="assest/uss.jpg">
+                    <h2>Chandler Bing</h2>
+                    <p class="status">Can I be Any More funnyy !! </p>
+                </div> 
+                <hr>
+                <div class="user 2 us2" id='2'>
+                    <img src="assest/barney.jpg">
+                    <h2>Barney Stinson</h2>
+                    <p class="status">Legen ... wait for it....dary!! Now SUIT UP</p>
+                </div>
+                <hr>
+                <div class="user 3 us3" id='3'>
+                    <img src="assest/joey.jpg">
+                    <h2>Joey Tribbiani</h2>
+                    <p class="status">Joey doesnt share food</p>
+                </div>
+                <hr>
+                <div class="user 4 us4" id='4'>
+                    <img src="assest/penny.png">
+                    <h2>Penny</h2>
+                    <p class="status">Alright ,Howard Wolowitz listen up</p>
+                </div>
+                <hr>
+                <div class="user 5 us5" id='5'>
+                    <img src="assest/sheldon.jfif">
+                    <h2>Sheldon Cooper</h2>
+                    <p class="status"> Bazinga !</p>
+                </div>
+                <hr>
+                <div class="user 6 us6" id='6'>
+                    <img src="assest/ted.jpg">
+                    <h2>Ted Mosby</h2>
+                    <p class="status">Nothing Good Happens After 2 A.M ! </p>
+                </div> 
+                <hr>
+            </div>
+            <div class="message-box" id='mess'>
+                <div class="head">
+                    <div class="logo">
+                        <img src="/assest/user1.jpg">
+                    </div>
+                    <div class="description">   
+                        <h2>Abhishek Dahiya</h2>
+                        <p>Web Developer</p>
+                    </div>
+                </div>
+                <div class="messcontainer">   
+                    <div class="message" id="message-content">
+                    </div>
+                    <div class="text-box">
+                        <i class="fa fa-smile-o"></i>
+                        <input type="text" id="message" placeholder="Start Chatting ! ">
+                        <i class="fa fa-paper-plane" aria-hidden="true" id="submit" ></i>
+                        <i class="fa fa-microphone"></i>
+                        <i class="fa fa-paperclip"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/users.js"></script>
+    <script src="js/chat.js"></script>
+    <!-- <script src="js/media.js"></script> -->
+</body>
+</html>
