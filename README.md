@@ -11,12 +11,12 @@
 
 ## Langauges and Tools Used
 ### **HTML**
-<img src="Screenshot/Screenshot (97).png"> </img>
+<img src="Screenshots/Screenshot (97).png"> </img>
 ### **SASS**
 ###### It is a preprocessor scripting language that is interpreted or compiled into CSS. Css codes in this project are build from scratch .NO external Framework Used.
-<img src="Screenshot/Screenshot (98).png"> </img>
+<img src="Screenshots/Screenshot (98).png"> </img>
 ### **JavaScript**
 ###### Vanilla Javascript is used to append messages and for manipulating the DOM.
-<img src="Screenshot/Screenshot (101).png"> </img>
+<img src="Screenshots/Screenshot (101).png"> </img>
 
 ##### Thank You ..!
