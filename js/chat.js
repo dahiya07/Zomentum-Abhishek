@@ -1,3 +1,5 @@
+// Adding Event listener to Every user's Div
+
 let users=document.getElementsByClassName("user");
 for(let i=0;i<arr.length;i++)
 {
@@ -5,13 +7,15 @@ for(let i=0;i<arr.length;i++)
 }
 
 
-
+//Getting Chat-area
 let message = document.getElementById('message-content');
 
+//Initialising Bot messages as an Object
 let botmessages=[
     "hie","Sorry,say that again","that is good","tell me about yourself","cant hear you","bie"
 ]
 
+//Making "Enter" work as an Click Function
 document.querySelector('#message').addEventListener("keyup", function(event) 
 {
     if (event.keyCode === 13) {
@@ -20,12 +24,13 @@ document.querySelector('#message').addEventListener("keyup", function(event)
             // Trigger the button element with a click
             document.getElementById("submit").click();
         }
-});    
+});
+
 document.querySelector('#submit').addEventListener('click',usermessageinsert);
 
 let key=0;
 
-
+//Function to open message area and closing user div's on cicking any user div's.
 function open()
 {
     if(key!=this.id)
@@ -56,16 +61,15 @@ function open()
 }
 
 
-
-
 function sleep(ms)
 {
     return new Promise(resolve=>setTimeout(resolve,ms));
 }
 
+//Funtion to Append user Messages by creating new div and appending them into individual's user div.
 async function usermessageinsert()
 {
-    let messa=document.getElementById('message').value;
+    let messa=document.getElementById('message').value; 
     let div=document.createElement('div');
     div.setAttribute('ALIGN','right')
     div.setAttribute('class','user-mess')
@@ -79,6 +83,7 @@ async function usermessageinsert()
     document.getElementById('message').value="";
 }
 
+//funtion to Append Bot messages
 function botinsertmessage()
 {
     let rand=Math.floor(Math.random()*5);
