@@ -10,7 +10,7 @@ for(let i=0;i<arr.length;i++)
 
 
 //Getting Chat-area
-let message = document.getElementById('message-content');
+//let message = document.getElementById('message-content');
 
 //Initialising Bot messages as an Object
 let botmessages=[
