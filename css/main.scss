@@ -1,0 +1,14 @@
+@import"chat-box";
+@import"chats";
+*{
+    margin:0px;
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;
+}
+
+body{
+    background-image: url('../assest/bakkkk.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: bottom;
+}

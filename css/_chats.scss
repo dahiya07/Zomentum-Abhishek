@@ -1,0 +1,33 @@
+.chatty{
+    //border: 1px solid black;
+    .user-mess , .bot-mess{
+        padding: 20px;
+        p{
+            border-radius: 31px 2px 38px 24px;
+            background-color: darkgray;
+            max-width: 80%;
+            width: fit-content;
+            font-size: 1em;
+            padding: 15px;
+            text-align: left;
+        }
+    }
+    .bot-mess{
+        p{
+            border-radius: 2px 31px 38px 24px;
+            text-align: right;
+            background-color: skyblue;
+        }
+    }
+     
+}
+
+.abled{
+    background-color: whitesmoke !important;
+    h2{
+        color: black !important;
+    }
+    p{
+        color: gray !important;
+    }
+}

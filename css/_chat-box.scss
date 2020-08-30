@@ -1,0 +1,244 @@
+.chat{
+    display: block;
+    position: relative;
+    width: 100%;
+    .header{
+        position: relative;
+        text-align: center;
+        height: 100px;
+        .title{
+            h1{
+                color: white;
+                font-size: 4em;
+            }
+        }
+        .about{
+            z-index: 99;
+            margin: -2px 10px;
+            p{
+                font-size: 1.2em;
+                color: rgb(74, 72, 72);
+                font-weight: bold;
+            };
+        }
+    }
+    .container{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        margin:25px auto;
+        width: 90%;
+        height: 700px;
+        background: rgba(0,0,0,0.7);
+        border-radius:45px;
+        .user-box{
+            border-radius: 45px 0px 0px 45px ;
+            width: 80%;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 40px;
+            .upper{
+                position:absolute;
+                display: none;
+                border-bottom:1px solid snow;
+                .search{
+                    text-align: center;
+                    padding: 27px 20px;
+                    height: 11%;
+                    input{
+                        width: 85%;
+                        padding:10px;
+                        border-radius:30px
+                    }
+                    i{
+                        position: relative;
+                        right:17%;
+                    }
+                }
+                .icons{
+                    width: fit-content;
+                    margin: auto;
+                    display: flex;
+                    justify-content: center;
+                    background-color: white;
+                    margin: 6px auto;
+                    i{
+                        font-size: 1.25em;
+                        padding: 5px 10px;
+                    }
+                    .fa-envelope{
+                        background-color: dimgray;
+                    }
+                }
+            }
+            hr{
+                display: none;
+            }
+            .user{
+                width: 30%;
+                text-align: center;
+                margin: 10px;
+                padding: 10px;
+                border-radius: 30px;
+                height: fit-content;
+                background: transparent;
+                img{
+                    max-width: 14em;
+                    background: transparent;
+                    height: auto;
+                    width: 100%;
+                    border-radius:50%;
+                    transition: all 1s ease-in-out ;
+                }
+                h2{
+                    color: white;
+                    font-size: 1.5em;
+                    margin :5px 10px;
+                }
+                p{
+                    display: none;
+                    color: #5adffd;
+                }
+                
+            }
+            .us1 , .us2 , .us3 , .us4 , .us5 , .us6{
+                &:hover{
+                    box-shadow: 1px 2px 12px -1px deepskyblue;
+                }
+            }
+        }
+        .message-box{
+            position: absolute;
+            display: none;
+            flex:1;
+            border: 0.7px solid whitesmoke;
+            border-radius: 0px 40px 40px 0px;
+            margin-left: 5px;
+            .head{
+                height: 17%;
+                border-bottom:1px solid gray;
+                display: flex;
+                justify-content: center;
+                .logo{
+                    margin: 10px;
+                    img{
+                        max-width: 6em;
+                        width: 100%;
+                        border-radius: 50%;
+                    }
+                }
+                .description{
+                    margin: 15px;
+                    h2{
+                        color: whitesmoke;
+                    }
+                    p{
+                        margin-top: 10px;
+                        color: gainsboro;
+                        font-size: 0.9em;
+                    }
+                }
+            }
+            .messcontainer{
+                background-image: url('../assest/mess_back.jpg');
+                height: 83%;
+                border-radius: 0px 0px 40px 0px;
+                .message{
+                    height: 90%;
+                    overflow: auto;
+                    scroll-behavior: smooth;
+                    &::-webkit-scrollbar {
+                        display: none;
+                    }
+                }
+                .text-box{
+                    background-color: #ccc;
+                    height: fit-content;
+                    padding: 15px;
+                    width: 100%;
+                    bottom: 2%;
+                    text-align: center;
+                    position: relative;
+                    input{
+                        width: 80%;
+                        padding: 11px;
+                        border-radius: 30px;
+                        border-width: 0px;
+                    }
+                    i{
+                        position: absolute;
+                        top: 24%;
+                        right: 4%;
+                        font-size: 1.75em;
+                        color: darkcyan;
+                    }
+                    .fa-smile-o{
+                        position: relative;
+                        left: -3%;
+                        top: 5px;
+                    }
+                    .fa-paperclip{
+                        position: relative;
+                        right: 10%;
+                        top: 5px;
+                        font-size: 1.5em;
+                    }
+                    .fa-microphone{
+                        position: relative;
+                        right: 5%;
+                        top: 5px;
+                        font-size: 1.5em;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.other{
+    margin-top: 0px !important;
+    box-shadow: -10px -6px 12px 7px dimgrey;
+    .user-box{
+        margin-top: 15px;
+        overflow: auto;
+        scrollbar-width: 0;
+        display: block !important;
+        width: 20% !important;
+        margin: 0px !important;
+        hr{
+            display: block !important;
+        }
+        .user{
+            border-radius: 20px 0px 0px 20px !important;
+            width: 100% !important;
+
+            img{
+                max-width: 6em !important;
+            }
+        }
+        .us1 , .us2 , .us3 , .us4 , .us5 , .us6{
+            &:hover{
+                box-shadow: 0px 0px 0px 0px blue !important;
+                img{
+                    max-width: 6em !important;
+                }
+            }
+        }
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+}
+
+.user-box2{
+    .user-box{
+        display: none;
+        position: absolute;
+        z-index: 99;
+        left: 0%;
+        background-color: rgba(0,0,0,0.8);
+        width: 200px !important;
+    }
+}
