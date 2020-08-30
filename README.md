@@ -6,5 +6,14 @@
 
 ## Requirements
 ###### No external/addditional Requirements . Windows supported Web-Chat application template. 
-###### This design also append messages from bot. To run :- Download all the files/folder and just open index.html on Google Chrome.
+###### This design also append messages from bot. 
+###### To run :- Download all the files/folder and open index.html on Google Chrome.
+
+## Langauges and Tools Used
+### **HTML**
+### **SASS**
+###### It is a preprocessor scripting language that is interpreted or compiled into CSS. Css codes in this project are build from scratch .NO external Framework Used.
+### **JavaScript**
+###### Vanilla Javascript is used to append messages and for manipulating the DOM.
+
 
