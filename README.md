@@ -1,1 +1,1 @@
-<p align ="center"># UI for Chat Application</p>
+### UI for Chat Application
