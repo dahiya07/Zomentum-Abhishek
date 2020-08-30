@@ -13,10 +13,10 @@
 ### **HTML**
 <img src="Screenshots/Screenshot (97).png"> </img>
 ### **SASS**
-###### It is a preprocessor scripting language that is interpreted or compiled into CSS. Css codes in this project are build from scratch .NO external Framework Used.
+###### It is a preprocessor scripting language that is interpreted or compiled into CSS. CSS codes in this project are build from scratch using SASS .NO external Framework Used.
 <img src="Screenshots/Screenshot (98).png"> </img>
 ### **JavaScript**
-###### Vanilla Javascript is used to append messages and for manipulating the DOM.
+###### Vanilla Javascript is used to append messages in tha chat area and for manipulating the DOM. No framework/libraries used
 <img src="Screenshots/Screenshot (101).png"> </img>
 
 ##### Thank You ..!
