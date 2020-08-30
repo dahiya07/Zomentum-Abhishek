@@ -1,5 +1,7 @@
-// Adding Event listener to Every user's Div
+//js main file to open message area, getting user div and appending messages of individual and bot.
 
+
+// Adding Event listener to Every user's Div
 let users=document.getElementsByClassName("user");
 for(let i=0;i<arr.length;i++)
 {
@@ -33,6 +35,7 @@ let key=0;
 //Function to open message area and closing user div's on cicking any user div's.
 function open()
 {
+    // to add a css class so that on clicking on user , that user is highlighted.
     if(key!=this.id)
     {
         if(key!=0)
@@ -42,7 +45,8 @@ function open()
         }
         document.getElementById(this.id).classList.add('abled');
     }
-    document.getElementById('mess').style.display="block";
+    
+    document.getElementById('mess').style.display="block";        
     document.getElementById('mess').style.position="relative";
     document.getElementById('search').style.display="block";
     document.getElementById('search').style.position="relative";
@@ -56,11 +60,11 @@ function open()
     }
     let x=document.getElementById(`user${this.id}`);
     x.style.display='block'
-    key=this.id;
-    document.getElementById('box').classList.add('other');
+    key=this.id;                                                    // updating the key for checking clicked user
+    document.getElementById('box').classList.add('other');          // Adding css class to align user and message area along
 }
 
-
+//A 1000 ms wait after user msg (ps:- waiting for bot to reply xD)
 function sleep(ms)
 {
     return new Promise(resolve=>setTimeout(resolve,ms));
