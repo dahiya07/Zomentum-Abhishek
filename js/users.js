@@ -1,9 +1,14 @@
+//Js file to create individul div's of user in message areas so that messages can be saved and go back to.
+
+
+//Adding event listener on every user Div
 let arr=document.getElementsByClassName("user");
 for(let i=0;i<arr.length;i++)
 {
     arr[i].addEventListener('click',userdiv);
 }
 
+//Creating individual Div
 function updatediv(key)
 {
     let divi=document.createElement('div');
@@ -12,6 +17,7 @@ function updatediv(key)
     document.getElementById('message-content').appendChild(divi);
 }
 
+// getting message area and checking if that users div's already exist in message area or not.
 function userdiv()
 {
     let key=this.id;
